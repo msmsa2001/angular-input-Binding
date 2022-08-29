@@ -1,0 +1,57 @@
+<div class="table_contant">
+    <table>
+      <tr>
+        <th>Product number</th>
+        <th>Product Name</th>
+        <th>Qty</th>
+        <th>Add</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mango</td>
+        <td>2</td>
+        <td><button class="btn green" >Add Product</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Orange</td>
+        <td>5</td>
+        <td><button class="btn green">Add Product</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Apple</td>
+        <td>4</td>
+        <td><button class="btn green">Add Product</button></td>
+      </tr>
+    </table>
+    </div>
+    
+    
+    <app-sub-user
+    *ngFor="let product of product"
+    [No]="product.No"
+    [productN]="product.productN"
+    [Qty]="product.Qty"
+    >
+        
+    </app-sub-user>
+    
+    
+    <!-- <div class="table_contant">
+      <table>
+          <tr>
+            <td>Product number</td>
+            <td>Product Name</td>
+            <td>Qty</td>
+            <td>Add</td>
+          </tr>
+          <tr *ngIf="get1I">
+            <td>1</td>
+            <td>Mango</td>
+            <td>2</td>
+            <td><button class="btn green" (click)="get1()">Remove Product</button></td>
+          </tr>
+      </table>
+      </div>  
+     -->
